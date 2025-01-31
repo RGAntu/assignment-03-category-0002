@@ -1,28 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
     <!-- Google font cdn  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome cdn  -->
+    <script
+      src="https://kit.fontawesome.com/9978e18aba.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Tailwind CSS and DaisyUi cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
-        }
-        .font-sora{
-            font-family: "Sora", serif;
-        }
-      </style>
-</head>
-<body class="font-sora">
-    
-</body>
+      @theme {
+        --color-clifford: #da373d;
+      }
+      .primary-color {
+        color: #179800;
+      }
+      .secondary-color {
+        color: #111111;
+      }
+      .font-sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+  </head>
+  <body class="font-sora">
+    <!-- Header section  -->
+    <header
+      class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] overflow-hidden"
+    >
+      <!-- nav container  -->
+      <div
+        class="container mx-auto flex items-center justify-between px-3 py-3 border-b border-b-[#179800] sm:border-none"
+      >
+        <!-- nav logo  -->
+        <div class="">
+          <img class="hidden sm:block" src="./images/logo-header.png" alt="" />
+          <img class="block sm:hidden" src="./images/mobile-logo.png" alt="" />
+        </div>
+
+        <!-- nav links  -->
+        <div class=" ">
+          <ul class="hidden lg:flex items-center text-lg font-medium space-x-5">
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- nav icons -->
+        <div class="hidden lg:flex items-center text-xl space-x-3 sm:block">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <!-- buttons  -->
+        <div class="hidden lg:flex sm:block">
+          <button class="text-lg px-7 py-2 border border-[#179800] rounded-lg">
+            Login
+          </button>
+          <button
+            class="text-lg px-7 py-2 bg-[#179800] text-[#fff] rounded-lg ml-5"
+          >
+            Register
+          </button>
+        </div>
+
+        <!-- hamburger -->
+        <div class="text-4xl block sm:hidden">
+          <i class="fa-solid fa-bars text-[#179800]"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section  -->
+    <main></main>
+
+    <!-- Footer section  -->
+    <footer></footer>
+  </body>
 </html>
